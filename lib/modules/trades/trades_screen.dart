@@ -78,6 +78,13 @@ class TradesScreen extends StatelessWidget {
           );
         },
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: AppColors.mainColor,
+        child: const Center(child: Icon(Icons.refresh,color: AppColors.white,),),
+        onPressed: (){
+          controller.getTrades();
+        },
+      ),
     );
   }
 
